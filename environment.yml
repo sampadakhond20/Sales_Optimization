@@ -1,0 +1,23 @@
+name: sales-optimization-env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Core libraries (Conda)
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyter
+
+  # pip section (like requirements.txt)
+  - pip
+  - pip:
+      - plotly
+      - openpyxl
+      - notebook

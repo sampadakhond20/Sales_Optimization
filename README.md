@@ -136,3 +136,70 @@ pip install pandas numpy matplotlib seaborn jupyter scikit-learn
 - Strong visual and statistical evidence for recommendations
 - Reproducible analysis workflow for team collaboration
 - Business-ready summary for decision-makers
+
+
+<!-- ------------------------------------IMPORTANT------------------------------------------->
+
+## ⚙️ Environment Setup
+
+This project uses a unified `environment.yml` file to manage dependencies using Conda and pip.
+
+### 📦 Prerequisites
+
+* Install Conda (Anaconda or Miniconda)
+
+---
+
+### 🚀 Create the Environment
+
+Run the following command in your project directory:
+
+```bash
+conda env create -f environment.yml
+```
+
+---
+
+### ▶️ Activate the Environment
+
+```bash
+conda activate sales-optimization-env
+```
+
+---
+
+### 📚 Installed Libraries
+
+The environment includes:
+
+* Core Data Libraries: `pandas`, `numpy`
+* Visualization: `matplotlib`, `seaborn`, `plotly`
+* Machine Learning: `scikit-learn`
+* Notebook Support: `jupyter`, `notebook`
+* File Handling: `openpyxl`
+
+---
+
+### 🔄 Update the Environment (if dependencies change)
+
+```bash
+conda env update -f environment.yml --prune
+```
+
+---
+
+### ❌ Remove the Environment
+
+```bash
+conda remove --name sales-optimization-env --all
+```
+
+---
+
+### 💡 Notes
+
+* This setup combines Conda and pip dependencies in a single file for better reproducibility.
+* Ensure the environment is activated before running notebooks or scripts.
+* Python version used: **3.11**
+
+---
